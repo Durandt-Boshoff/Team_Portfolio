@@ -1,0 +1,262 @@
+/* NAVBAR SECTION */
+
+.navbar {
+    background: var(--primary-color) !important;
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(15px);
+    margin-top: 20px;
+    padding: 12px 20px;
+}
+
+.navbar-brand {
+    color: var(--secondary-color) !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+    color: var(--secondary-color) !important;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #58a6ff !important;
+}
+
+.navbar .nav-link.active {
+    color: #58a6ff !important;
+}
+
+.navbar-toggler {
+    border-color: var(--secondary-color);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* ABOUT US SECTION */
+
+#about {
+    width: 90%;
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 50px;
+    border-radius: 30px;
+
+    background: var(--card-background);
+    backdrop-filter: blur(15px);
+
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+
+    text-align: center;
+}
+
+#about h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+/* ABOUT HIGHLIGHTS */
+
+#about .about-content {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+#about .about-box {
+    flex: 1;
+    padding: 25px;
+    border-radius: 20px;
+
+    background: var(--glass-background);
+    border: 1px solid var(--glass-border);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+#about .about-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(88, 166, 255, 0.25);
+}
+
+#about .about-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+#about .about-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* ABOUT US MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    #about {
+        width: 100%;
+        padding: 35px 20px;
+        margin: 50px auto;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+
+    #about .about-content {
+        flex-direction: column;
+    }
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    width: 90%;
+    max-width: 850px;
+    margin: 80px auto;
+    padding: 45px;
+    border-radius: 30px;
+
+    background: var(--card-background);
+    backdrop-filter: blur(15px);
+
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+#contact h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#contact > p {
+    max-width: 650px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* FORM */
+
+#contact .form-label {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#contact .form-control {
+    background: rgba(255, 255, 255, 0.75);
+    color: #09111d;
+    border: 2px solid #03111b;
+    border-radius: 12px;
+    padding: 12px 15px;
+    font-family: var(--font-family);
+}
+
+#contact .form-control::placeholder {
+    color: #52616b;
+}
+
+#contact .form-control:focus {
+    background: #ffffff;
+    color: #09111d;
+    border: 2px solid #58a6ff;
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2);
+}
+
+#contact .btn-primary {
+    background: #03111b !important;
+    color: #cfe3f1 !important;
+    border: 2px solid #03111b !important;
+    border-radius: 12px;
+    padding: 11px 28px;
+    font-weight: bold;
+}
+
+#contact .btn-primary:hover {
+    background: #58a6ff !important;
+    color: #03111b !important;
+    border-color: #58a6ff !important;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    background: var(--primary-color);
+    border-top: 1px solid var(--glass-border) !important;
+    border-radius: 25px 25px 0 0;
+    padding: 25px !important;
+    box-shadow: var(--shadow);
+}
+
+footer .text-muted {
+    color: var(--secondary-color) !important;
+}
+
+footer i {
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+}
+
+footer a:hover i {
+    color: #58a6ff !important;
+    transform: translateY(-3px);
+}
+
+
+/* RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    #contact {
+        width: 100%;
+        margin: 50px auto;
+        padding: 30px 20px;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer > div,
+    footer > ul {
+        width: 100%;
+        justify-content: center !important;
+        margin-bottom: 15px;
+    }
+}
