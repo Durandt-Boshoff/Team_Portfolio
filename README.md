@@ -37,4 +37,7 @@
 - Repo hosted on GitHub, workflow: pull before you push
 - Team GitHub usernames:
   - Chiwo: `JustChiwo`
-  - *(add remaining teammates' usernames here)*
+  - Andre: `Andre-vdm-dev`
+  - Asisipho: `mjordan26`
+  - Tshehla: `tshehla26`
+  - Durandt: `Durandt-Boshoff`
