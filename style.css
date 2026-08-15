@@ -317,6 +317,49 @@ body {
 }
 
 /* =====================================================
+   PHOTO HOVER OVERLAY
+===================================================== */
+
+.photo-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 0 0 25px 25px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  transition: opacity .3s ease;
+  z-index: 10;
+}
+
+.slideshow:hover .photo-overlay {
+  opacity: 1;
+}
+
+.photo-overlay a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 20px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 12px;
+  transition: transform .3s ease,
+              background .3s eas;
+}
+
+.photo-overlay a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+/* =====================================================
    CONTENT
 ===================================================== */
 
@@ -462,5 +505,6 @@ body {
     border-left: none;
     border-top: 1px solid var(--divider-color);
   }
+}
 
   /* Navigation Bar */
