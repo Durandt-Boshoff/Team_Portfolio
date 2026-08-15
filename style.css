@@ -479,7 +479,7 @@ body {
 }
 
 #contact .form-control {
-  background: rgba(255, 255, 255, 0.75);
+  background: #020b13af;
   color: #09111d;
   border: 2px solid #03111b;
   border-radius: 12px;

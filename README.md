@@ -26,15 +26,10 @@
 - This keeps styling and structure consistent across all sections without needing constant coordination
 
 ### Still To Decide
-- [ ] Team name and slogan
-- [ ] Primary + secondary color palette
-- [ ] Font family
-- [ ] Who builds the shared template
-- [ ] Layout method for responsive team cards (Flexbox vs Grid)
 - [ ] Who will present the project
 
 ### Collaboration
-- Repo hosted on GitHub, workflow: pull before you push
+- Repo hosted on GitHubh
 - Team GitHub usernames:
   - Chiwo: `JustChiwo`
   - Andre: `Andre-vdm-dev`
