@@ -1,3 +1,342 @@
+/* =====================================================
+   THEME VARIABLES
+===================================================== */
+
+:root {
+  --primary-color: #03111b;
+  --secondary-color: #cfe3f1;
+  --background-color: #ffffff;
+  --text-color: #09111d;
+  --font-family: "Quicksand", sans-serif;
+  --font-weight: bold;
+  --font-size: 16px;
+
+  /* Glass Effect */
+  --card-background: rgba(255, 255, 255, 0.12);
+  --glass-background: rgba(88, 166, 255, 0.18);
+  --glass-border: rgba(88, 166, 255, 0.35);
+  --border-color: rgba(255, 255, 255, 0.25);
+  --divider-color: rgba(255, 255, 255, 0.2);
+
+  --shadow:
+    0 15px 40px rgba(0, 0, 0, 0.35), inset 0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+.darkmode {
+  --primary-color: #323738;
+  --secondary-color: #03090f;
+  --background-color: #020b13;
+  --text-color: #9ec7f0;
+  --font-family: "Quicksand", sans-serif;
+  --font-weight: bold;
+  --font-size: 16px;
+
+  /* Glass Effect */
+  --card-background: rgba(255, 255, 255, 0.12);
+  --glass-background: rgba(88, 166, 255, 0.18);
+  --glass-border: rgba(88, 166, 255, 0.35);
+  --border-color: rgba(255, 255, 255, 0.25);
+  --divider-color: rgba(255, 255, 255, 0.2);
+}
+
+/* =====================================================
+   PAGE LAYOUT
+===================================================== */
+
+body {
+  background: var(--background-color);
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--text-color);
+  margin: 0;
+  padding: 40px;
+}
+
+/* =====================================================
+   MEMBER CARD
+===================================================== */
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.member-card {
+  width: 90%;
+  max-width: 1000px;
+  min-height: 650px;
+  margin: 40px auto;
+  padding: 25px;
+  display: flex;
+  gap: 30px;
+  border-radius: 35px;
+  background: var(--card-background);
+  color: var(--text-color);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+/* =====================================================
+   PHOTO / SLIDESHOW
+===================================================== */
+
+.photo {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.slideshow {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 13/20;
+  position: relative;
+}
+
+.slideshow img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  opacity: 0;
+  animation: slideshow 9s infinite;
+}
+
+.photo img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.photo img:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.photo img:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  28% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* =====================================================
+   PHOTO HOVER OVERLAY
+===================================================== */
+
+.photo-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 0 0 25px 25px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.slideshow:hover .photo-overlay {
+  opacity: 1;
+}
+
+.photo-overlay a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 20px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 12px;
+  transition:
+    transform 0.3s ease,
+    background 0.3s eas;
+}
+
+.photo-overlay a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex: 0;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+}
+
+.header h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.header p {
+  max-width: 600px;
+  line-height: 1.7;
+  font-size: 1.15rem;
+  color: var(--text-color);
+}
+
+/* =====================================================
+   FUN FACT
+===================================================== */
+
+.fun-fact {
+  margin-top: 10px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  background: var(--glass-background);
+  border: 1px solid var(--glass-border);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.fun-fact:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(88, 166, 255, 0.25);
+}
+
+.fun-fact h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+.fun-fact p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* =====================================================
+   SKILLS & HOBBIES
+===================================================== */
+
+.lists {
+  flex: 1;
+  display: flex;
+  margin-top: 30px;
+  border-top: 1px solid var(--divider-color);
+}
+
+.skills {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.hobbies {
+  flex: 1;
+  padding-right: 30px;
+  border-left: 1px solid var(--divider-color);
+}
+
+.skills h2,
+.hobbies h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.skills ul,
+.hobbies ul {
+  margin-top: 15px;
+  padding-left: 25px;
+}
+
+.skills li,
+.hobbies li {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 900px) {
+  .member-card {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .photo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .header,
+  .fun-fact {
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .lists {
+    flex-direction: column;
+  }
+
+  .skills {
+    padding-right: 0;
+  }
+
+  .hobbies {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid var(--divider-color);
+  }
+}
 /* ABOUT US SECTION */
 
 #about {
@@ -160,343 +499,34 @@
   background: #58a6ff !important;
   color: #03111b !important;
   border-color: #58a6ff !important;
-}
-
-/* =====================================================
-   THEME VARIABLES
-===================================================== */
-
-:root {
-  --primary-color: #03111b;
-  --secondary-color: #cfe3f1;
-  --background-color: #ffffff;
-  --text-color: #09111d;
-  --font-family: "Quicksand", sans-serif;
-  --font-weight: bold;
-  --font-size: 16px;
-
-  /* Glass Effect */
-  --card-background: rgba(255, 255, 255, 0.12);
-  --glass-background: rgba(88, 166, 255, 0.18);
-  --glass-border: rgba(88, 166, 255, 0.35);
-  --border-color: rgba(255, 255, 255, 0.25);
-  --divider-color: rgba(255, 255, 255, 0.2);
-
-  --shadow:
-    0 15px 40px rgba(0, 0, 0, 0.35), inset 0 0 20px rgba(255, 255, 255, 0.08);
-}
-
-.darkmode {
-  --primary-color: #323738;
-  --secondary-color: #03090f;
-  --background-color: #020b13;
-  --text-color: #9ec7f0;
-  --font-family: "Quicksand", sans-serif;
-  --font-weight: bold;
-  --font-size: 16px;
-
-  /* Glass Effect */
-  --card-background: rgba(255, 255, 255, 0.12);
-  --glass-background: rgba(88, 166, 255, 0.18);
-  --glass-border: rgba(88, 166, 255, 0.35);
-  --border-color: rgba(255, 255, 255, 0.25);
-  --divider-color: rgba(255, 255, 255, 0.2);
-}
-
-/* =====================================================
-   PAGE LAYOUT
-===================================================== */
-
-body {
-  background: var(--background-color);
-  min-height: 100vh;
-  font-family: var(--font-family);
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  color: var(--text-color);
-  margin: 0;
-  padding: 40px;
-}
-
-/* =====================================================
-   MEMBER CARD
-===================================================== */
-
-.team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-.member-card {
-  width: 90%;
-  max-width: 1100px;
-  min-height: 650px;
-  margin: 40px auto;
-  padding: 25px;
-  display: flex;
-  gap: 30px;
-  border-radius: 35px;
-  background: var(--card-background);
-  color: var(--text-color);
-  backdrop-filter: blur(15px);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow);
-}
-
-/* =====================================================
-   PHOTO / SLIDESHOW
-===================================================== */
-
-.photo {
-  width: 320px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.slideshow {
-  width: 100%;
-  max-width: 260px;
-  aspect-ratio: 13/20;
-  position: relative;
-}
-
-.slideshow img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 25px;
-  opacity: 0;
-  animation: slideshow 9s infinite;
-}
-
-.photo img:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.photo img:nth-child(2) {
-  animation-delay: 3s;
-}
-
-.photo img:nth-child(3) {
-  animation-delay: 6s;
-}
-
-@keyframes slideshow {
-  0% {
-    opacity: 0;
-  }
-
-  5% {
-    opacity: 1;
-  }
-
-  28% {
-    opacity: 1;
-  }
-
-  33% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-/* =====================================================
-   PHOTO HOVER OVERLAY
-===================================================== */
-
-.photo-overlay {
-  position: absolute;
-  inset: auto 0 0 0;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  border-radius: 0 0 25px 25px;
-  backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.15);
-  opacity: 0;
-  transition: opacity .3s ease;
-  z-index: 10;
-}
-
-.slideshow:hover .photo-overlay {
-  opacity: 1;
-}
-
-.photo-overlay a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 10px 20px;
-  color: var(--text-color);
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 12px;
-  transition: transform .3s ease,
-              background .3s eas;
-}
-
-.photo-overlay a:hover {
-  background: rgba(255, 255, 255, 0.15);
-  transform: translateY(-3px);
-}
-
-/* =====================================================
-   CONTENT
-===================================================== */
-
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  flex: 0;
-  margin-bottom: 0;
-  padding-bottom: 25px;
-}
-
-.header h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
-}
-
-.header p {
-  max-width: 600px;
-  line-height: 1.7;
-  font-size: 1.15rem;
-  color: var(--text-color);
-}
-
-/* =====================================================
-   FUN FACT
-===================================================== */
-
-.fun-fact {
-  margin-top: 10px;
-  padding: 15px 20px;
-  border-radius: 15px;
-  background: var(--glass-background);
-  border: 1px solid var(--glass-border);
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
 
-.fun-fact:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 25px rgba(88, 166, 255, 0.25);
+/* Home styling */
+#home {
+  margin: 80px auto;
+  text-align: center;
 }
 
-.fun-fact h2 {
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 1.4rem;
+#home h1 {
+  font-size: clamp(2rem, 5vw, 5rem);
+  margin-top: 10px;
 }
 
-.fun-fact p {
-  margin: 0;
-  line-height: 1.5;
+#home h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
-/* =====================================================
-   SKILLS & HOBBIES
-===================================================== */
+/* meet the team styling */
 
-.lists {
-  flex: 1;
-  display: flex;
-  margin-top: 30px;
-  border-top: 1px solid var(--divider-color);
+#team {
+  margin: 80px auto;
+  text-align: center;
 }
-
-.skills {
-  flex: 1;
-  padding-right: 30px;
-}
-
-.hobbies {
-  flex: 1;
-  padding-right: 30px;
-  border-left: 1px solid var(--divider-color);
-}
-
-.skills h2,
-.hobbies h2 {
-  margin-bottom: 15px;
-  font-size: 2rem;
-}
-
-.skills ul,
-.hobbies ul {
-  margin-top: 15px;
-  padding-left: 25px;
-}
-
-.skills li,
-.hobbies li {
-  margin-bottom: 12px;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-/* =====================================================
-   RESPONSIVE DESIGN
-===================================================== */
-
-@media (max-width: 900px) {
-  .member-card {
-    flex-direction: column;
-    align-items: center;
-
-    padding: 20px;
-  }
-
-  .content {
-    width: 100%;
-  }
-
-  .photo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  .header,
-  .fun-fact {
-    text-align: center;
-  }
-
-  .header h1 {
-    font-size: 2rem;
-  }
-
-  .lists {
-    flex-direction: column;
-  }
-
-  .skills {
-    padding-right: 0;
-  }
-
-  .hobbies {
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-left: 0;
-    border-left: none;
-    border-top: 1px solid var(--divider-color);
-  }
+#team h2 {
+  font-size: clamp(2rem, 5vw, 2rem);
+  margin-top: 10px;
 }
