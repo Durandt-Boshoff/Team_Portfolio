@@ -588,8 +588,9 @@ footer {
 }
 /* Navbar styling */
 
-nav #navbar navbar-expand-lg {
-  background: var(--card-background);
+.navbar {
+
+  border-radius: 20px;
 }
 .navbar-brand {
   color: var(--primary-color);
@@ -597,4 +598,15 @@ nav #navbar navbar-expand-lg {
 
 .nav-link {
   color: var(--text-color);
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .dropdown-toggle:hover,
+.navbar .dropdown-toggle:focus {
+  color: var(--text-color) !important;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
 }
