@@ -516,8 +516,8 @@ footer {
   align-items: flex-start;
   gap: 30px;
   padding: 30px;
-  background: var(--background-color);
-  color: var(--text-color);
+  background: #03111b;
+  color: #cfe3f1;
   transition: 0.5s ease;
 }
 
@@ -528,20 +528,16 @@ footer {
 }
 
 .members-links a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-.members-links a {
-  color: var(--text-color);
+  color: #cfe3f1;
   text-decoration: none;
   transition: 0.5s ease;
 }
 
 .members-links a:hover {
-  color: var(--text-color);
+  color: #ffffff;
   transform: translateX(5px);
 }
+
 
 /* Darkmode */
 .theme-toggle-wrapper {
