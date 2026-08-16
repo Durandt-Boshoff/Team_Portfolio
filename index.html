@@ -12,6 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <!-- Bootstrap CSS Link -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="main.css" />
@@ -24,18 +27,59 @@
     ></script>
   </head>
 
-  <!-- Nav bar -->
-  <!-- <header>
-    <div class="navbar">
-      <img src="Images/Logo light.svg" alt="Logo" class="logo" />
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <button class="darkmode">Lights Off</button>
+<!-- Navbar section -->
+
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">Tech Titans</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#home">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Team
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#member-asisipho">Asisipho Mjoli</a></li>
+              <li><a class="dropdown-item" href="#member-tshehla">Tshehla Makoala</a></li>
+              <li><a class="dropdown-item" href="#member-durandt">Durandt Boshoff</a></li>
+              <li><a class="dropdown-item" href="#member-chiwo">Chiwo Mvundura</a></li>
+              <li><a class="dropdown-item" href="#member-andre">Andre Van Der Merwe</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <div class="theme-toggle-wrapper">
+              <button id="toggle-theme">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                  <path d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                  <path d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                </svg>
+              </button>
+            </div>
+          </li>
+
+        </ul>
+      </div>
     </div>
-  </header> -->
+  </nav>
+</header>
 
   <body>
     <!-- Temporary Darkmode button -->
