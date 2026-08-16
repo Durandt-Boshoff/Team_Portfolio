@@ -2,6 +2,12 @@
 
 ## Project Planning
 
+### Work Flow
+- Chiwo: Focused on, Javascript, color scheme, debuging & the landing page
+- Durandt: Focused on debuging, building the base HTML structure & styling
+- Andre: Focused on the Navbar, cleanup of code & debuging
+- Asisipho: Focused on the footer section
+
 ### Team Decisions
 
 **1. Website Structure**
@@ -29,7 +35,6 @@
 - [ ] Who will present the project
 
 ### Collaboration
-- Repo hosted on GitHubh
 - Team GitHub usernames:
   - Chiwo: `JustChiwo`
   - Andre: `Andre-vdm-dev`
