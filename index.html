@@ -13,8 +13,11 @@
       rel="stylesheet"
     />
     <!-- Bootstrap CSS Link -->
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="main.css" />
@@ -27,80 +30,105 @@
     ></script>
   </head>
 
-
-
   <body>
-
     <!-- Navbar section -->
 
-  <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#home">Tech Titans</a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home">Tech Titans</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-center">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Us</a>
-          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Team
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="#member-asisipho">Asisipho Mjoli</a></li>
-              <li><a class="dropdown-item" href="#member-tshehla">Tshehla Makoala</a></li>
-              <li><a class="dropdown-item" href="#member-durandt">Durandt Boshoff</a></li>
-              <li><a class="dropdown-item" href="#member-chiwo">Chiwo Mvundura</a></li>
-              <li><a class="dropdown-item" href="#member-andre">Andre Van Der Merwe</a></li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Team
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#member-asisipho"
+                      >Asisipho Mjoli</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#member-tshehla"
+                      >Tshehla Makoala</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#member-durandt"
+                      >Durandt Boshoff</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#member-chiwo"
+                      >Chiwo Mvundura</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#member-andre"
+                      >Andre Van Der Merwe</a
+                    >
+                  </li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Darkmode button -->
+
+    <div class="theme-toggle-wrapper">
+      <button id="toggle-theme">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3"
+        >
+          <path
+            d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3"
+        >
+          <path
+            d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+          />
+        </svg>
+      </button>
     </div>
-  </nav>
-</header> 
-
-    <!-- Temporary Darkmode button -->
-
- <header>
-      <div class="theme-toggle-wrapper">
-        <button id="toggle-theme">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#e3e3e3"
-          >
-            <path
-              d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#e3e3e3"
-          >
-            <path
-              d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
-            />
-          </svg>
-        </button>
-      
-      </div>
 
     <!-- Home section -->
     <section id="home">
@@ -142,19 +170,19 @@
     </section>
     <!-- CARD LAYOUT -->
     <main class="team">
-     <article class="member-card" id="member-asisipho">
+      <article class="member-card" id="member-asisipho">
         <section class="photo">
-            <img src="Images/" alt="" />
-            <div class="photo-overlay">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-github"></i>
-                <span>Username</span>
-              </a>
-            </div>
+          <img src="Images/" alt="" />
+          <div class="photo-overlay">
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span>Username</span>
+            </a>
+          </div>
         </section>
         <section class="content">
           <div class="header">
@@ -186,19 +214,19 @@
         </section>
       </article>
 
-      <article class="member-card " id="member-tshehla">
+      <article class="member-card" id="member-tshehla">
         <section class="photo">
-            <img src="images\Tshehla.jpg" alt="Tshehla Makoala" />
-            <div class="photo-overlay">
-              <a
-                href="https://github.com/tshehla26"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-github"></i>
-                <span>tshehla26</span>
-              </a>
-            </div>
+          <img src="images\Tshehla.jpg" alt="Tshehla Makoala" />
+          <div class="photo-overlay">
+            <a
+              href="https://github.com/tshehla26"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span>tshehla26</span>
+            </a>
+          </div>
         </section>
         <section class="content">
           <div class="header">
@@ -239,26 +267,33 @@
 
       <article class="member-card" id="member-durandt">
         <section class="photo">
-            <img src="Images/Durandt.jpeg" alt="" />
-            <div class="photo-overlay">
-              <a
-                href="https://github.com/Durandt-Boshoff"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-github"></i>
-                <span>Durandt-Boshoff</span>
-              </a>
-            </div>
+          <img src="Images/Durandt.jpeg" alt="" />
+          <div class="photo-overlay">
+            <a
+              href="https://github.com/Durandt-Boshoff"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span>Durandt-Boshoff</span>
+            </a>
+          </div>
         </section>
         <section class="content">
           <div class="header">
             <h1>Johannes Durandt Boshoff</h1>
-            <p>I am an aspiring software developer who finds joy in building creative, user-friendly projects. I enjoy learning new skills with personal projects and at my own time.</p>
+            <p>
+              I am an aspiring software developer who finds joy in building
+              creative, user-friendly projects. I enjoy learning new skills with
+              personal projects and at my own time.
+            </p>
           </div>
           <div class="fun-fact">
             <h2>Fun Fact:</h2>
-            <p>I'm a big fan of story-driven games and can easily lose hours exploring a world and uncover its mysteries.</p>
+            <p>
+              I'm a big fan of story-driven games and can easily lose hours
+              exploring a world and uncover its mysteries.
+            </p>
           </div>
           <div class="lists">
             <div class="skills">
@@ -283,17 +318,17 @@
 
       <article class="member-card" id="member-chiwo">
         <section class="photo">
-            <img src="Images/Chiwo.jpeg" alt="An image if Chiwo" />
-            <div class="photo-overlay">
-              <a
-                href="https://github.com/JustChiwo"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-github"></i>
-                <span>Just.Chiwo</span>
-              </a>
-            </div>
+          <img src="Images/Chiwo.jpeg" alt="An image if Chiwo" />
+          <div class="photo-overlay">
+            <a
+              href="https://github.com/JustChiwo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span>Just.Chiwo</span>
+            </a>
+          </div>
         </section>
         <section class="content">
           <div class="header">
@@ -328,19 +363,19 @@
         </section>
       </article>
 
-      <article class="member-card " id="member-andre">
+      <article class="member-card" id="member-andre">
         <section class="photo">
-            <img src="Images/" alt="" />
-            <div class="photo-overlay">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-github"></i>
-                <span>Username</span>
-              </a>
-            </div>
+          <img src="Images/" alt="" />
+          <div class="photo-overlay">
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span>Username</span>
+            </a>
+          </div>
         </section>
         <section class="content">
           <div class="header">
@@ -431,4 +466,4 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="darkmode.js"></script>
-  </html>
+</html>
