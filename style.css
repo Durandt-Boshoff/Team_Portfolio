@@ -516,8 +516,8 @@ footer {
   align-items: flex-start;
   gap: 30px;
   padding: 30px;
-  background: var(--primary-color);
-  color: var(--secondary-color);
+  background: var(--background-color);
+  color: var(--text-color);
 }
 
 .members-links {
@@ -527,12 +527,12 @@ footer {
 }
 
 .members-links a {
-  color: var(--secondary-color);
+  color: var(--text-color);
   text-decoration: none;
 }
 
 .members-links a {
-  color: var(--secondary-color);
+  color: var(--text-color);
   text-decoration: none;
   transition: 0.3s ease;
 }
@@ -587,5 +587,16 @@ footer {
 
 #theme-label {
   font-size: 12px;
+  color: var(--text-color);
+}
+
+nav #navbar navbar-expand-lg {
+  background: var(--card-background);
+}
+.navbar-brand {
+  color: var(--primary-color);
+}
+
+.nav-link {
   color: var(--text-color);
 }
