@@ -7,6 +7,7 @@
 - Durandt: Focused on debuging, building the base HTML structure & styling
 - Andre: Focused on the Navbar, cleanup of code & debuging
 - Asisipho: Focused on the footer section
+- Tshehla: Focused on the contact us section
 
 ### Team Decisions
 
@@ -30,9 +31,6 @@
 - A shared template will be built first (header, footer, styling, layout structure)
 - Each team member will then build their own section on top of the shared template
 - This keeps styling and structure consistent across all sections without needing constant coordination
-
-### Still To Decide
-- [ ] Who will present the project
 
 ### Collaboration
 - Team GitHub usernames:
